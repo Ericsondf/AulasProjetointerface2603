@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!---Formulario---->
+    <h2 align="center">Formularioh2</h2>
+    <form action="arquivo.sql" method="post">
+        <p>Usuario : <input type="text" name="Usuario"placeholder="Usuario" size="10"/></p>
+
+     
+        <form action="arquivo.sql" method="post">
+          
+
+        <p>Telefone <input type="tel" placeholder="DDD-00000-000" maxlength="11" />
+        </p>
+        <p>
+            Data de nascimento : <input type="date" />
+        </p>
+        <p>
+            Senha :<input type="password" maxlength="8" >
+        </p>
+
+        <p>Email :<input type="email"  /></p>
+        <p>Idade :<input type="number"  /></p>
+
+        <p>Espaço de choro livre : <textarea rows="10" cols="50"></textarea>
+
+        </p>
+
+        <!-----Estrutura de opçoes-->
+
+        <p> Estado de Nascimento : 
+            <br>
+    <input type="radio" name="Estados" value="DF"  /> DF 
+    <input type="radio" name="Estados" value="SP"  /> SP 
+    <input type="radio" name="Estados" value="MG"  /> MG 
+    <input type="radio" name="Estados" value="CE"  /> CE 
+        </p>
+
+        <!----- Estrutura de seleçao---->
+
+    <p> Paises :
+        <select>
+            <option></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Chile">Chile</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+    </p>
+
+    <!-------Estrutura de checkbox e envio-->
+
+    <p>Masculino<input type="checkbox" /></p>
+    <p>Feminino<input type="checkbox" /></p>
+    <p>Viado<input type="checkbox" /></p>
+
+    <!------- envio ----->
+
+    <input type="reset" name="reset"  />
+    <input type="submit" name="Enviar"  />
+    
+
+    </form>
+
+
+
+</body>
+</html>
